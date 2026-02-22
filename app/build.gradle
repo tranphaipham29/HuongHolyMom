@@ -1,7 +1,13 @@
+plugins {
+    id 'com.android.application' version '8.0.2' apply false
+}
+
 apply plugin: 'com.android.application'
 
 android {
+    namespace 'com.mymother.app'
     compileSdk 34
+
     defaultConfig {
         applicationId "com.mymother.app"
         minSdk 21
@@ -9,6 +15,7 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
     buildTypes {
         release {
             minifyEnabled false
